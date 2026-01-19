@@ -24,7 +24,8 @@
 - Container security starts with a secured container image. When developers spin up a container, they use a base image from an external registry to build their images, and these images can contain malware or vulnerable libraries.
 - Developers also sometimes forget to remove passwords and secret keys used during development before pushing the image to the registry. If infrastructure is compromised, these passwords are leaked along with the images.
 - This is why image scanning is critical. Scanning images before it can be utilized helps developers understand what images are secure to use.
-- <b> Real World Analogy: </b>
+
+🌎 Real World Analogy: </b>
 - - Think of a container image like a seal shipping container arriving at a warehouse.
   - Inside the container:
   -  - Boxes (OS packages, libraries, runtimes)
@@ -33,12 +34,20 @@
    
 <b> Image scanning </b> is like running the container or box in this scenario through customs + X - ray inspection before it's allowed into the warehouse (container registry) or put on a delivery truck.
 
-# Security benefit of Image Scanning 
+# Security Benefit of Image Scanning 
 - Scanning images early helps organizations
-- - Prevent known vulnerable images from ever being deployed
-  - Reduce attack surface before runtime.
-  - Helps developers find issues early during build, during PR, before deployment.
-  - Help developers fix issues early and not have to perform rework like rebuilding images, redeploying services, or performing emergency patching.
+- Prevent known vulnerable images from ever being deployed
+- Reduce attack surface before runtime.
+- Helps developers find issues early during build, during PR, before deployment.
+- Help developers fix issues early and not have to perform rework like rebuilding images, redeploying services, or performing emergency patching.
 
-3. Shift-left security
-4. Runtime protection
+
+
+# Shift-left security
+- Shift-left security is the concept of conducting security testing and practices in the earlier stages of the Software Development Cycle (SDLC), rather tahn waiting until the end.
+- By integrating security from the very beginning, organizations find and fix vulnerablities sooner, which accelerates delivery, and reduces risk.
+
+
+# Runtime protection
+- To protect application data on a running container, it's important to get visibilty within container itself and its worker nodes.
+- An effective container security tool should capture and correlate real-time activity and metadata from both containers and worker nodes.
