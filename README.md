@@ -14,13 +14,13 @@
 - Following container best practices
 - Leveraging Enterprise tools
 
-- 
-
-
-
-
 # What are Container Security best practices?
 1. Image Scanning
+2. Shift-left security
+3. Runtime protection
+
+
+# Image Scanning
 - Container security starts with a secured container image. When developers spin up a container, they use a base image from an external registry to build their images, and these images can contain malware or vulnerable libraries.
 - Developers also sometimes forget to remove passwords and secret keys used during development before pushing the image to the registry. If infrastructure is compromised, these passwords are leaked along with the images.
 - This is why image scanning is critical. Scanning images before it can be utilized helps developers understand what images are secure to use.
